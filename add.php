@@ -1,11 +1,11 @@
 <?php 
 
-$text = "Hello, World!"; 
-$num1 = 10; 
-$num2 = "adb"; 
+// This creates a case-sensitive constant 
+define("WELCOME", "GeeksforGeeks"); 
+echo WELCOME, "\n"; 
 
-echo $text."\n"; 
-echo $num1."+".$num2."="; 
-echo $num1 + $num2; 
+// This creates a case-insensitive constant 
+define("HELLO", "GeeksforGeeks", true); 
+echo hello; 
 
 ?> 
