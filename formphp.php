@@ -73,7 +73,8 @@ $rows = mysqli_num_rows($result1);
             echo 'ID: <a href="record.php?id='.$row['id'].'">'.$row['id'].'</a><br>';         
             echo 'Names: ' . $row['name'] . '<br>';        
             echo 'Email: ' . $row['email'] . '<br>';         
-            echo 'Telephone no#: ' . $row['mobile'] . '<br>', '<br>';         
+            echo 'Telephone no#: ' . $row['mobile'] . '<br>';
+            echo 'ID: <a href="deletephone.php?id=' . $row['id'] . '"><b>Delete number</b></a><br><br>';         
         
         } 
 } 
