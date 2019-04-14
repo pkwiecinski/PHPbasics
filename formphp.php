@@ -70,7 +70,7 @@ $rows = mysqli_num_rows($result1);
     
 	if ($rows) {     
         while ($row = mysqli_fetch_array($result1)) {         
-            echo 'ID: ' . $row['id'] . '<br>';         
+            echo 'ID: <a href="record.php?id='.$row['id'].'">'.$row['id'].'</a><br>';         
             echo 'Names: ' . $row['name'] . '<br>';        
             echo 'Email: ' . $row['email'] . '<br>';         
             echo 'Telephone no#: ' . $row['mobile'] . '<br>', '<br>';         
